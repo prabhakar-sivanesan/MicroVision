@@ -19,7 +19,7 @@ Although Sparkfun Edge has the camera interface (OV7670), the support or the api
 
 ## Setup :
 Download the Tensorflow repository and extract it
-git clone https://github.com/tensorflow/tensorflow.git
+ https://github.com/tensorflow/tensorflow.git
 
 ### Install necessary python packages
 	pip3 install pycrypto pyserial –user
@@ -78,7 +78,7 @@ If you are funning for the first time, change the name of file to sign
 
 	cp tensorflow/lite/experimental/micro/tools/make/downloads/AmbiqSuite-Rel2.0.0/tools/apollo3_scripts/keys_info0.py \
 	tensorflow/lite/experimental/micro/tools/make/downloads/AmbiqSuite-Rel2.0.0/tools/apollo3_scripts/keys_info.py
-Now geenreate signed bin
+Now genreate signed bin
 
 	python3 tensorflow/lite/experimental/micro/tools/make/downloads/AmbiqSuite-Rel2.0.0/tools/apollo3_scripts/create_cust_image_blob.py \
 	--bin tensorflow/lite/experimental/micro/tools/make/gen/sparkfun_edge_cortex-m4/bin/micro_vision.bin \
@@ -88,7 +88,7 @@ Now geenreate signed bin
 	--version 0x0
 
 
-Then run the ommand
+Then run the command
 
 	python3 tensorflow/lite/experimental/micro/tools/make/downloads/AmbiqSuite-Rel2.0.0/tools/apollo3_scripts/create_cust_wireupdate_blob.py \
 	--load-address 0x20000 \
